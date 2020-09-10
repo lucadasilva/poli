@@ -1,39 +1,40 @@
 .caja {
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row; }
+
+.caja div {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .caja div.cuadrado__1 {
+    background-color: blueviolet; }
+  .caja div.cuadrado__2 {
+    background-color: brown; }
+
+.text__main {
+  font-size: 15px;
+  color: white;
+  text-shadow: 1px 1px 2px black; }
+
+@media screen and (max-width: 800px) {
+  .caja {
     width: 800px;
     height: 800px;
     border: 1px solid black;
     display: flex;
-    flex-direction: row;
-}
-.caja div{
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.text__main {
-    font-size: 15px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-@media screen and (max-width: 800px){
-    .caja {
-        width: 800px;
-        height: 800px;
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-       
-    }
+    flex-direction: column; }
     .caja div {
-        width: 400px;
-        width: 400px;
-        border: 1px solid green;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
+      width: 400px;
+      width: 400px;
+      border: 1px solid green;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+
+/*# sourceMappingURL=challenge.css.map */

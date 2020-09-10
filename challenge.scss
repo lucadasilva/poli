@@ -1,0 +1,44 @@
+@import "_variables.scss";
+
+.caja{
+    @extend %caja;
+        & div{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            &.cuadrado__1 {
+                background-color: $bg-primary;
+            }
+            &.cuadrado__2 {
+                background-color: $bg-secondary;
+            }
+        }
+}
+
+
+.text__main {
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 800px){
+    .caja {
+        width: 800px;
+        height: 800px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;        
+        & div {
+            width: 400px;
+            width: 400px;
+            border: 1px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
